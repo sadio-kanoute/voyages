@@ -1,0 +1,136 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #00A8E8;
+  color: #fff;
+  padding: 25px 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+.quote {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Navigation */
+nav {
+  margin-top: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu > li {
+  position: relative;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.submenu {
+  display: none;
+  position: static;
+  background: #eee;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #222;
+}
+
+.submenu a:hover {
+  color: #00A8E8;
+}
+
+/* Team section */
+.intro {
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+.grid-team {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.grid-team article {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #777;
+}
+
+/* Responsive Desktop */
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: max-content;
+  }
+
+  .grid-team {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .grid-team article {
+    width: 200px;
+  }
+}
