@@ -1,4 +1,5 @@
-/* Reset & base */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -6,34 +7,27 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #222;
-  line-height: 1.6;
-  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  color: #111;
 }
 
-/* Header */
-header {
-  background: #00A8E8;
-  color: #fff;
-  padding: 25px 15px;
-  text-align: center;
-  border-radius: 8px;
+/* ✅ NAVBAR */
+.navbar {
+  background-color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
 }
 
-header h1 {
-  font-size: 2rem;
-}
-
-.quote {
-  margin-top: 10px;
-  font-style: italic;
-}
-
-/* Navigation */
-nav {
-  margin-top: 20px;
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  text-decoration: none;
 }
 
 .menu {
@@ -41,96 +35,190 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  align-items: center;
 }
 
-.menu > li {
+.menu li {
   position: relative;
-  background: #fff;
-  padding: 10px 15px;
-  border-radius: 6px;
-  cursor: pointer;
-  width: 90%;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.submenu {
+.menu a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+}
+
+/* ✅ Menu déroulant */
+.dropdown-menu {
   display: none;
-  position: static;
-  background: #eee;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 6px;
-  width: 100%;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  border: 1px solid #ddd;
+  z-index: 99;
+  padding: 10px 0;
 }
 
-.menu li:hover .submenu {
+.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+.dropdown:hover .dropdown-menu {
   display: block;
 }
 
-.submenu li {
-  margin: 5px 0;
-}
-
-.submenu a {
-  text-decoration: none;
-  color: #222;
-}
-
-.submenu a:hover {
-  color: #00A8E8;
-}
-
-/* Team section */
-.intro {
-  margin: 40px 0 20px;
+/* ✅ SECTION HERO */
+.hero {
+  background-image: url('../img/bg-accueil.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
   text-align: center;
+  padding: 100px 20px;
+  width: 100%;
 }
 
-.grid-team {
+.hero-content {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 16px;
+}
+
+.hero-buttons {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  margin-top: 25px;
 }
 
-.grid-team article {
-  background: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #ff595e;
+  color: white;
+}
+
+.btn.primary:hover {
+  background-color: #e04a4e;
+}
+
+.btn.secondary {
+  background-color: white;
+  color: #222;
+  border: 2px solid #222;
+}
+
+.btn.secondary:hover {
+  background-color: #f2f2f2;
+}
+
+/* ✅ SECTION ÉQUIPE */
+.equipe-section {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.equipe-section h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.equipe-section p {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+/* ✅ Cartes équipe */
+.team-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
   text-align: center;
 }
 
-/* Footer */
-footer {
-  margin-top: 40px;
-  text-align: center;
-  color: #777;
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-/* Responsive Desktop */
+.card h4 {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+/* Couleurs spécifiques par personne */
+#h4sadio {
+  color: #FF6B6B; 
+}
+
+#h4amad {
+  color: #1E90FF; 
+}
+
+#h4marie {
+  color: #16d44f; 
+}
+
+
+/* ✅ Desktop layout */
 @media (min-width: 768px) {
   .menu {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .hero-buttons {
     flex-direction: row;
     justify-content: center;
   }
 
-  .submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-    width: max-content;
-  }
-
-  .grid-team {
+  .team-cards {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  .grid-team article {
-    width: 200px;
+  .card {
+    width: 30%;
   }
 }

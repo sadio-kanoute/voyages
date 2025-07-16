@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Voyages - Accueil</title>
-  <link rel="stylesheet" href="css/voyages.css">
+  <link rel="stylesheet" href="css/voyages.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
+  <!-- ✅ NAVBAR -->
   <header>
-    <h1>🌍 Voyages</h1>
-    <p class="quote">“Un voyage est la seule chose qui s'achète et vous rend plus riche.”</p>
-    <nav>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html">Voyages</a>
+      </div>
       <ul class="menu">
-        <li>
-          Par continent
-          <ul class="submenu">
-            <li><a href="japon.html">Asie - Japon</a></li>
-            <li><a href="brazil.html">Amérique - Brésil</a></li>
-            <li><a href="espagne.html">Europe - Espagne</a></li>
-            <li><a href="maroc.html">Afrique - Maroc</a></li>
+        <li class="dropdown">
+          <a href="#">Par continent</a>
+          <ul class="dropdown-menu">
+            <li><a href="thailande.html">Asie - Thaïlande</a></li>
+            <li><a href="france.html">Europe - France</a></li>
+            <li><a href="egypte.html">Afrique - Égypte</a></li>
           </ul>
         </li>
-        <li>
-          Par personne
-          <ul class="submenu">
-            <li><a href="japon.html">Sadio - Japon</a></li>
-            <li><a href="brazil.html">Moussa - Brésil</a></li>
-            <li><a href="espagne.html">Yasmine - Espagne</a></li>
-            <li><a href="maroc.html">Mehdi - Maroc</a></li>
+        <li class="dropdown">
+          <a href="#">Par voyageur</a>
+          <ul class="dropdown-menu">
+            <li><a href="thailande.html">Sadio - Thaïlande</a></li>
+            <li><a href="egypte.html">Amad - Égypte</a></li>
+            <li><a href="france.html">Marie - France</a></li>
           </ul>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="intro">
-      <h2>Notre équipe</h2>
-      <p>Nous sommes 4 passionnés de découvertes. Explore nos destinations favorites à travers le monde !</p>
-    </section>
+  <!-- ✅ SECTION ACCUEIL (bg image full) -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Découvrez le monde avec notre équipe</h1>
+      <p>Explorez les plus belles destinations à travers les yeux de nos voyageurs passionnés : AMAD, Sadio, Marie</p>
+      <div class="hero-buttons">
+        <a href="#start" class="btn primary">Commencer l’aventure</a>
+        <a href="#equipe" class="btn secondary">Découvrir notre équipe</a>
+      </div>
+    </div>
+  </section>
 
-    <section class="grid-team">
-      <article><h3>Sadio</h3><p>Fan du Japon 🇯🇵</p></article>
-      <article><h3>Moussa</h3><p>Ambiance Brésilienne 🇧🇷</p></article>
-      <article><h3>Yasmine</h3><p>Espagne, soleil et tapas 🇪🇸</p></article>
-      <article><h3>Mehdi</h3><p>Fier du Maroc 🇲🇦</p></article>
-    </section>
-  </main>
+  <!-- ✅ SECTION ÉQUIPE -->
+  <section class="equipe-section" id="equipe">
+    <h2>Notre Équipe de Passionnés</h2>
+    <p>Trois voyageurs, trois personnalités, une même passion : vous faire découvrir les merveilles du monde.</p>
+    
+    <div class="team-cards">
+      <div class="card">
+        <img src="img/sadio.jpg" alt="Sadio" class="avatar" />
+        <h3>Sadio</h3>
+        <h4 id="h4sadio">Expert Asie & Culture</h4>
+        <p>Explorateur d’Asie • Passionné de culture et de gastronomie thaï</p>
+        <a href="thailande.html" class="btn primary">Explorer avec Sadio</a>
+      </div>
 
-  <footer>
-    <p>&copy; 2025 Voyages - Projet CDPI</p>
-  </footer>
+      <div class="card">
+        <img src="img/amad.jpg" alt="Amad" class="avatar" />
+        <h3>Amad</h3>
+        <h4 id="h4amad">Expert Afrique & Aventure</h4>
+        <p>Aventurier du désert • Fasciné par l’histoire ancienne de l’Égypte</p>
+        <a href="egypte.html" class="btn primary">Explorer avec Amad</a>
+      </div>
+
+      <div class="card">
+        <img src="img/marie.jpg" alt="Marie" class="avatar" />
+        <h3 >Marie</h3>
+        <h4 id="h4marie">Experte Europe & Romance</h4>
+        <p>Amoureuse de l’Europe • Passionnée par le romantisme français</p>
+        <a href="france.html" class="btn primary">Explorer avec Marie</a>
+      </div>
+    </div>
+  </section>
+
+  
 </body>
 </html>
