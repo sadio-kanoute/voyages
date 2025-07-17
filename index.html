@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Voyages - Accueil</title>
-  <link rel="stylesheet" href="css/header-footer.css"/>
-  <link rel="stylesheet" href="css/voyages.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/voyages.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Voyages - Accueil</title>
 </head>
+
 <body>
-  <!-- ✅ NAVBAR -->
-     <!-- Header -->
+    <!-- ✅ NAVBAR -->
+    <!-- Header -->
     <header class="header">
         <div class="top-bar">
             <a href="index.html" class="logo">
@@ -79,51 +81,76 @@
         </div>
     </div>
 
-  <!-- ✅ SECTION ACCUEIL (bg image full) -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Découvrez le monde avec notre équipe</h1>
-      <p>Explorez les plus belles destinations à travers les yeux de nos voyageurs passionnés : AMAD, Sadio, Marie</p>
-      <div class="hero-buttons">
-        <a href="#start" class="btn primary">Commencer l’aventure</a>
-        <a href="#equipe" class="btn secondary">Découvrir notre équipe</a>
-      </div>
-    </div>
-  </section>
+    <!-- Main Content -->
+    <main class="main-content">
+        <section class="hero">
+            <img src="https://images.pexels.com/photos/27536600/pexels-photo-27536600.jpeg" alt="">
+            <div class="hero-content">
+                <span class="hero-title">Decouvrez le monde avec <br> notre équipe</span>
+                <p class="hero-description">Explorez les plus belles destinations a traver les yeux de nos voyageurs</p>
+                <div class="hero-btns">
+                    <a href="#destinations" class="btn primary">Commencer l'Aventure</a>
+                    <a href="#team" class="btn secondary">Decouvrir notre Equipe</a>
+                </div>
+            </div>
+        </section>
 
-  <!-- ✅ SECTION ÉQUIPE -->
-  <section class="equipe-section" id="equipe">
-    <h2>Notre Équipe de Passionnés</h2>
-    <p>Trois voyageurs, trois personnalités, une même passion : vous faire découvrir les merveilles du monde.</p>
-    
-    <div class="team-cards">
-      <div class="card">
-        <img src="img/sadio.jpg" alt="Sadio" class="avatar" />
-        <h3>Sadio</h3>
-        <h4 id="h4sadio">Expert Asie & Culture</h4>
-        <p>Explorateur d’Asie • Passionné de culture et de gastronomie thaï</p>
-        <a href="thailande.html" class="btn primary">Explorer avec Sadio</a>
-      </div>
+        <section id="team">
+            <div class="container">
+                <h2 class="team-title">Notre Équipe</h2>
+                <p>Trois voyageurs, trois personnalités, une même passion : vous faire découvrir les merveilles du monde</p>
+                <div class="team">
+                    <div class="team-member">
+                        <img src="https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg" alt="Amad">
+                        <h3>Amad</h3>
+                        <p>Expert en voyages africains, Amad vous guide à travers les merveilles de l'Afrique.</p>
+                        <a href="egypte.html">Voyager avec Amad</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg" alt="Sadio">
+                        <h3>Sadio</h3>
+                        <p>Spécialiste des destinations asiatiques, Sadio partage ses expériences en Thaïlande.</p>
+                        <a href="thailande.html">Voyager avec Sadio</a>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.pexels.com/photos/289923/pexels-photo-289923.jpeg" alt="Marie">
+                        <h3>Marie</h3>
+                        <p>Passionnée par l'Europe, Marie vous emmène à la découverte des trésors français.</p>
+                        <a href="#">Voyager avec Marie</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="card">
-        <img src="img/amad.jpg" alt="Amad" class="avatar" />
-        <h3>Amad</h3>
-        <h4 id="h4amad">Expert Afrique & Aventure</h4>
-        <p>Aventurier du désert • Fasciné par l’histoire ancienne de l’Égypte</p>
-        <a href="egypte.html" class="btn primary">Explorer avec Amad</a>
-      </div>
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <h2 class="destination-title">Nos Destinations de coup de cœur</h2>
+                <div class="destination-cards">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/27536600/pexels-photo-27536600.jpeg" alt="Destination 1">
+                        <span class="card-title">Egypte</span>
+                        <p class="card-description">Description de la destination 1.</p>
+                        <a href="egypte.html" class="explore"> Explorez</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/27536600/pexels-photo-27536600.jpeg" alt="Destination 2">
+                        <span class="card-title">thailande</span>
+                        <p class="card-description">Description de la destination 2.</p>
+                        <a href="thailande.html" class="explore"> Explorez</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/27536600/pexels-photo-27536600.jpeg" alt="Destination 3">
+                        <span class="card-title">France</span>
+                        <p class="card-description">Description de la destination 3.</p>
+                        <a href="#" class="explore"> Explorez</a>
+                    </div>
+                </div>
+            </div>
 
-      <div class="card">
-        <img src="img/marie.jpg" alt="Marie" class="avatar" />
-        <h3 >Marie</h3>
-        <h4 id="h4marie">Experte Europe & Romance</h4>
-        <p>Amoureuse de l’Europe • Passionnée par le romantisme français</p>
-        <a href="france.html" class="btn primary">Explorer avec Marie</a>
-      </div>
-    </div>
-  </section>
 
-      <!-- Footer Actions -->
+    </main>
+
+    <!-- Footer Actions -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -149,6 +176,7 @@
         </div>
     </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
