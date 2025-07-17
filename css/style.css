@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    background-color: #cde0f8;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(61, 61, 61, 0.5);
+    background: linear-gradient(to right, #2563EB, #60A5FA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    border: #2563EB 2px solid;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50vh;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary {
+    background-color: #2563EB;
+}
+.secondary {
+    border: white 2px solid;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+#team {
+    background-color: white;
+    padding: 4rem 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container .team-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.team-member {
+    background-color: #f0f4ff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    width: 300px;
+}
+.team-member img {
+    border: #2563EB 2px solid;
+    padding: .2rem;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.team-member h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.team-member p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.team-member a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #2563EB;
+    border-radius: 50vh;
+    text-decoration: none;
+    color: #2563EB;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.team-member a:hover {
+    background-color: #2563EB;
+    color: white;
+    transform: scale(1.05);
+}
+
+.destination-title {
+    font-size: 1.5rem;
+    margin: 3rem 0 2rem;
+}
+
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card-title {
+    text-align: start;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+.card-description {
+    font-size: 1rem;
+    padding: 0 1rem;
+}
+.explore {
+    display: block;
+    padding: 0.5rem 1rem;
+    background-color: #2563EB;
+    color: white;
+    text-decoration: none;
+    border-radius: 50vh;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.explore:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+.card:hover {
+    transform: translateY(-5px);
+}
