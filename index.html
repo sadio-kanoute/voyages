@@ -4,36 +4,80 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Voyages - Accueil</title>
+  <link rel="stylesheet" href="css/header-footer.css"/>
   <link rel="stylesheet" href="css/voyages.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <!-- ✅ NAVBAR -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="index.html">Voyages</a>
-      </div>
-      <ul class="menu">
-        <li class="dropdown">
-          <a href="#">Par continent</a>
-          <ul class="dropdown-menu">
-            <li><a href="thailande.html">Asie - Thaïlande</a></li>
-            <li><a href="france.html">Europe - France</a></li>
-            <li><a href="egypte.html">Afrique - Égypte</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#">Par voyageur</a>
-          <ul class="dropdown-menu">
-            <li><a href="thailande.html">Sadio - Thaïlande</a></li>
-            <li><a href="egypte.html">Amad - Égypte</a></li>
-            <li><a href="france.html">Marie - France</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  </header>
+     <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🌍</span>
+                <span class="logo-text">Voyage</span>
+            </a>
+            <nav class="nav">
+                <div class="dropdowns">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                    <div class="dropdown">
+                        <span class="continents">continents</span>
+                        <div class="dropdown-content">
+                            <div class="dropdown-item">
+                                <span class="continent-name">🌍 Afrique</span>
+                                <a href="egypte.html" class="country"> Egypte</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <span class="continent-name">🌏 Asie</span>
+                                <a href="thailande.html" class="country"> Thaïlande</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <span class="continent-name">🌍 Europe</span>
+                                <a href="#" class="country"> France</a>
+                            </div>
+                            <div class="dropdown-item">
+                                <span class="continent-name">🌎 Amérique</span>
+                            </div>
+                            <div class="dropdown-item">
+                                <span class="continent-name">🌏 Océanie</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <span class="guides">Guides</span>
+                        <ul class="dropdown-content">
+                            <li class="dropdown-item"><a href="egypte.html">Amad</a></li>
+                            <li class="dropdown-item"><a href="thailande.html">Sadio</a></li>
+                            <li class="dropdown-item"><a href="#">Marie</a></li>
+                        </ul>
+                    </div>
+            </nav>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#accueil" class="mobile-nav-link">Accueil</a>
+        <div class="mobile-dropdown">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Continents</a>
+            <div class="mobile-dropdown-content">
+                <a href="egypte.html" class="mobile-dropdown-item">🌍 Afrique → egypte</a>
+                <a href="thailande.html" class="mobile-dropdown-item">🌏 Asie → thailande</a>
+                <a href="#" class="mobile-dropdown-item">🌎 Amérique</a>
+                <a href="#" class="mobile-dropdown-item">🌍 Europe</a>
+                <a href="#" class="mobile-dropdown-item">🌏 Océanie</a>
+            </div>
+        </div>
+        <div class="mobile-dropdown">
+            <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Guides</a>
+            <div class="mobile-dropdown-content">
+                <a href="egypte.html" class="mobile-dropdown-item"> Amad</a>
+                <a href="thailande.html" class="mobile-dropdown-item">Sadio</a>
+                <a href="#" class="mobile-dropdown-item">Marie</a>
+            </div>
+        </div>
+    </div>
 
   <!-- ✅ SECTION ACCUEIL (bg image full) -->
   <section class="hero">
@@ -79,6 +123,32 @@
     </div>
   </section>
 
-  
+      <!-- Footer Actions -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <h3>Explorez d'Autres Destinations</h3>
+                    <p>Découvrez nos autres destinations de rêve</p>
+                </div>
+                <div class="footer-actions">
+                    <button class="footer-btn btn-primary">
+                        <span>🇫🇷</span>
+                        <a href="#">Découvrir la France</a>
+                    </button>
+                    <button class="footer-btn btn-secondary">
+                        <span>🇹🇭</span>
+                        <a href="thailande.html">Découvrir la Thaïlande</a>
+                    </button>
+                    <button class="footer-btn btn-tertiary">
+                        <span>🏠</span>
+                        <a href="index.html">Retour à l'Accueil</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
