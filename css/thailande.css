@@ -1,314 +1,216 @@
-/* === BASE STYLES MOBILE FIRST === */
+/* ========== Base Mobile-First ========== */
 
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background: #f8f9fa;
-  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4fa;
+  color: #111;
 }
 
-section {
-  padding: 20px;
+h1, h2, h3, h4 {
+  margin: 0 0 10px;
+  line-height: 1.2;
 }
 
-h1, h2 {
-  color: #0066cc;
-  margin-bottom: 10px;
+a {
+  text-decoration: none;
+  color: #007bff;
 }
 
-/* === NAVBAR === */
-
-.header {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.top-bar {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+  padding: 15px;
 }
 
-.top-bar .logo {
-    font-size: 1.4rem;
-    display: flex;
-    align-items: center;
-    color: #d4af37;
+/* Header & Navbar */
+header {
+  background-color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.top-bar .logo .logo-icon {
-    margin-right: .5rem;
-    font-size: 1.8rem;
-    animation: rotate 10s linear infinite;
+header img {
+  height: 30px;
 }
 
-@keyframes rotate {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+nav a {
+  margin-left: 10px;
+  font-size: 14px;
 }
 
-.top-bar .logo .logo-text {
-    font-weight: 700;
+/* Hero */
+.hero {
+  background-image: url('../img/thailande-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
 }
 
-.nav {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
+.hero h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-.nav-link {
-    margin: 0 1rem;
-    transition: color 0.3s ease;
+.hero p {
+  font-size: 14px;
+  margin-top: 10px;
 }
 
-.nav-link:hover {
-    color: #d4af37;
+/* Section Container */
+.section {
+  background: white;
+  margin: 20px 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-/* Dropdowns desktop */
-.dropdowns {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+/* Tableau */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
 }
 
-.dropdown {
-    position: relative;
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
 }
 
-.dropdown-content {
-    position: absolute;
-    top: 100%;
-    right: 1rem;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-radius: 0.5rem;
-    display: none;
-    transition: all 0.6s ease;
+th {
+  background-color: #f9f9f9;
+  font-weight: 600;
 }
 
-.dropdown:hover .dropdown-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    padding: 0.5rem 0;
-    border-bottom: #333333b4 solid 1px;
-    width: 150px;
+/* Form */
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
 }
 
-.dropdown-item {
-    padding: 0.5rem 1rem;
-    display: flex;
-    flex-direction: column;
+form button {
+  background-color: #2a6bf4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.continent-name {
-    font-weight: 600;
-    font-size: 1.1rem;
+form button:hover {
+  background-color: #174cd3;
 }
 
-.country {
-    align-self: center;
+/* Badges */
+.badges {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
 }
 
-.dropdown-item a:hover {
-    scale: 1.05;
-    color: #d4af37;
+.badges button {
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-/* Mobile menu button */
-.mobile-menu-btn {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #4b5563;
-    transition: color 0.3s ease;
+.badges .egypt {
+  background: #00c896;
+  color: #fff;
 }
 
-.mobile-menu-btn:hover {
-    color: #d4af37;
+.badges .france {
+  background: #e63946;
+  color: #fff;
 }
 
-/* Mobile menu */
-.mobile-menu {
-    display: none;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: white;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+.badges .accueil {
+  background: #4d4d4d;
+  color: #fff;
 }
 
-.mobile-menu.active {
-    display: block;
-    max-height: 500px;
+/* Images Grid */
+.img-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.mobile-nav-link {
-    display: block;
-    padding: 16px 20px;
-    color: #4b5563;
-    text-decoration: none;
-    border-bottom: 1px solid #e5e7eb;
-    transition: all 0.3s ease;
+.img-grid img {
+  flex: 1 1 calc(50% - 10px);
+  border-radius: 10px;
 }
 
-.mobile-nav-link:hover {
-    background-color: #f3f4f6;
-    color: #d4af37;
-    padding-left: 30px;
-}
-
-/* Mobile dropdown */
-.mobile-dropdown {
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.mobile-dropdown-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    background: #f8f9fa;
-}
-
-.mobile-dropdown.active .mobile-dropdown-content {
-    max-height: 300px;
-}
-
-.mobile-dropdown-item {
-    display: block;
-    padding: 12px 40px;
-    color: #6b7280;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-size: 0.9rem;
-}
-
-.mobile-dropdown-item:hover {
-    background: #e5e7eb;
-    color: #d4af37;
-}
-
-/* === FOOTER === */
-
-.footer {
-    padding: 80px 0;
-    background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
-    color: white;
-}
-
-.footer-content {
-    text-align: center;
-}
-
-.footer-text {
-    margin-bottom: 40px;
-}
-
-.footer-text h3 {
-    font-size: 2rem;
-    margin-bottom: 12px;
-    background: linear-gradient(135deg, #f4d03f, #d4af37);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.footer-text p {
-    font-size: 1.1rem;
-    opacity: 0.8;
-}
-
-.footer-actions {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-.footer-btn {
-    padding: 16px 32px;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.footer-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-/* Footer buttons variants */
-.btn-primary {
-    background: linear-gradient(135deg, #10b981, #059669);
-    color: white;
-}
-
-.btn-secondary {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
-    color: white;
-}
-
-.btn-tertiary {
-    background: linear-gradient(135deg, #6b7280, #4b5563);
-    color: white;
-}
-
-/* === RESPONSIVE (DESKTOP) === */
-
+/* ========== Responsive Desktop ========== */
 @media (min-width: 768px) {
-  .welcome-text,
-  .expertise table,
-  .contact-experts form,
-  .planify form {
-    max-width: 800px;
-    margin: auto;
+  .container {
+    padding: 30px;
   }
 
-  .france-images .image-grid {
-    grid-template-columns: repeat(4, 1fr);
+  .hero {
+    padding: 100px 30px;
   }
 
-  .cta-buttons {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .section {
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 1200px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .badges {
     justify-content: center;
+    gap: 20px;
   }
-}
 
-@media (max-width: 768px) {
-    .nav,
-    .header-actions {
-        display: none;
-    }
+  .img-grid {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
 
-    .mobile-menu-btn {
-        display: block;
-    }
+  .img-grid img {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  form button {
+    width: auto;
+    padding: 12px 20px;
+  }
 }
