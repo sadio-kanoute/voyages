@@ -199,3 +199,117 @@ body {
 .card:hover {
     transform: translateY(-5px);
 }
+
+.expertise-section {
+    background-color: #cde0f8;
+    padding: 4rem 1rem;
+}
+
+.expertise-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2rem auto 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-table thead {
+    background-color: #f0f4ff;
+}
+
+.expertise-table th,
+.expertise-table td {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+    font-size: 1rem;
+    border-bottom: 1px solid #e0e7ff;
+    vertical-align: middle;
+}
+
+.expertise-table tbody tr:nth-child(even) {
+    background-color: #f9fbff;
+}
+
+.expertise-table tbody tr:hover {
+    background-color: #eef4ff;
+}
+
+.icon {
+    margin-right: 0.3rem;
+}
+
+
+    
+.form-section {
+    background-color: #cde0f8;
+    padding: 4rem 1rem;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.travel-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-field input,
+.form-field select,
+.form-textarea textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.form-textarea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.submit-btn {
+    background-color: #2563EB;
+    color: white;
+    font-size: 1rem;
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #1d4ed8;
+}

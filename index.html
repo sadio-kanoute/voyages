@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/voyages.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/voyages.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <title>Voyages - Accueil</title>
 </head>
 
 <body>
-    <!-- ✅ NAVBAR -->
+    <!--  NAVBAR -->
     <!-- Header -->
     <header class="header">
         <div class="top-bar">
@@ -95,6 +95,7 @@
             </div>
         </section>
 
+        <!-- section nos equipe -->
         <section id="team">
             <div class="container">
                 <h2 class="team-title">Notre Équipe</h2>
@@ -122,30 +123,131 @@
             </div>
         </section>
 
+
+
+        <!-- section destination de coueur -->
         <section id="destinations" class="destinations">
             <div class="container">
                 <h2 class="destination-title">Nos Destinations de coup de cœur</h2>
                 <div class="destination-cards">
                     <div class="card">
-                        <img src="https://images.pexels.com/photos/27536600/pexels-photo-27536600.jpeg" alt="Destination 1">
+                        <img src="img/nil-egypte.jpg" alt="nil-egypte">
                         <span class="card-title">Egypte</span>
                         <p class="card-description">Description de la destination 1.</p>
                         <a href="egypte.html" class="explore"> Explorez</a>
                     </div>
                     <div class="card">
-                        <img src="https://images.pexels.com/photos/27536600/pexels-photo-27536600.jpeg" alt="Destination 2">
+                        <img src="img/thai.jpg" alt="Destination 2">
                         <span class="card-title">thailande</span>
                         <p class="card-description">Description de la destination 2.</p>
                         <a href="thailande.html" class="explore"> Explorez</a>
                     </div>
                     <div class="card">
-                        <img src="https://images.pexels.com/photos/27536600/pexels-photo-27536600.jpeg" alt="Destination 3">
+                        <img src="img/paris.jpg" alt="Destination 3">
                         <span class="card-title">France</span>
                         <p class="card-description">Description de la destination 3.</p>
                         <a href="#" class="explore"> Explorez</a>
                     </div>
                 </div>
             </div>
+        </section>
+
+
+
+        <!-- section expertise de l'equipe -->
+            <section id="expertise" class="expertise-section">
+                <div class="container">
+                    <h2 class="team-title">Expertise de Notre Équipe</h2>
+                    <table class="expertise-table">
+                        <thead>
+                            <tr>
+                                <th>Voyageur</th>
+                                <th>Spécialité</th>
+                                <th>Pays Expertise</th>
+                                <th>Continents</th>
+                                <th>Années d'Expérience</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="icon">🧍‍♂️</span><strong> AMAD</strong></td>
+                                <td>Aventure & Culture</td>
+                                <td>Égypte</td>
+                                <td>Afrique</td>
+                                <td>8 ans</td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon">🧍‍♀️</span><strong> Sadio</strong></td>
+                                <td>Photographie & Nature</td>
+                                <td>Japon, Thaïlande, Inde</td>
+                                <td>Asie</td>
+                                <td>12 ans</td>
+                            </tr>
+                            <tr>
+                                <td><span class="icon">🧍‍♀️</span><strong> Marie</strong></td>
+                                <td>Gastronomie & Art</td>
+                                <td>France, Italie, Espagne</td>
+                                <td>Europe</td>
+                                <td>6 ans</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        <!-- section formulaire --> 
+        <section id="planification" class="form-section">
+            <div class="container">
+                <h2 class="form-title">Planifiez Votre Aventure avec Nous</h2>
+                <form class="travel-form">
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="votre@email.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-field">
+                            <label for="destination">Destination Souhaitée</label>
+                            <select id="destination" name="destination" required>
+                                <option value="">Choisir une destination</option>
+                                <option value="egypte">Égypte</option>
+                                <option value="thailande">Thaïlande</option>
+                                <option value="france">France</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="budget">Budget Approximatif</label>
+                            <select id="budget" name="budget" required>
+                                <option value="">Sélectionner un budget</option>
+                                <option value="500">Moins de 500€</option>
+                                <option value="1000">500€ - 1000€</option>
+                                <option value="2000">1000€ - 2000€</option>
+                                <option value="plus">Plus de 2000€</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-textarea">
+                        <label for="message">Vos Envies de Voyage</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Décrivez vos envies de voyage, vos centres d'intérêt, le type d'expérience recherchée..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer ma Demande de Voyage</button>
+                </form>
+            </div>
+        </section>
+
+
+            
+
+
+        
 
 
     </main>
