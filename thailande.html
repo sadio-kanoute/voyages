@@ -1,327 +1,298 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thaïlande - Le Royaume du Sourire</title>
 
-    <link rel="stylesheet" href="css/voyages.css" />
-    <link rel="stylesheet" href="css/thailande.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thaïlande - Le Royaume du Sourire</title>
 
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="top-bar">
-        <a href="index.html" class="logo">
-          <span class="logo-icon">🌍</span>
-          <span class="logo-text">Voyage</span>
-        </a>
-        <nav class="nav">
-          <div class="dropdowns">
-            <a href="index.html" class="nav-link">Accueil</a>
-            <div class="dropdown">
-              <span class="continents">continents</span>
-              <div class="dropdown-content">
-                <div class="dropdown-item">
-                  <span class="continent-name">🌍 Afrique</span>
-                  <a href="egypte.html" class="country"> Egypte</a>
-                </div>
-                <div class="dropdown-item">
-                  <span class="continent-name">🌏 Asie</span>
-                  <a href="thailande.html" class="country"> Thaïlande</a>
-                </div>
-                <div class="dropdown-item">
-                  <span class="continent-name">🌍 Europe</span>
-                  <a href="#" class="country"> France</a>
-                </div>
-                <div class="dropdown-item">
-                  <span class="continent-name">🌎 Amérique</span>
-                </div>
-                <div class="dropdown-item">
-                  <span class="continent-name">🌏 Océanie</span>
-                </div>
+  <link rel="stylesheet" href="css/voyages.css" />
+  <link rel="stylesheet" href="css/thailande.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="top-bar">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌍</span>
+        <span class="logo-text">Voyage</span>
+      </a>
+      <nav class="nav">
+        <div class="dropdowns">
+          <a href="index.html" class="nav-link">Accueil</a>
+          <div class="dropdown">
+            <span class="continents">continents</span>
+            <div class="dropdown-content">
+              <div class="dropdown-item">
+                <span class="continent-name">🌍 Afrique</span>
+                <a href="egypte.html" class="country"> Egypte</a>
+              </div>
+              <div class="dropdown-item">
+                <span class="continent-name">🌏 Asie</span>
+                <a href="thailande.html" class="country"> Thaïlande</a>
+              </div>
+              <div class="dropdown-item">
+                <span class="continent-name">🌍 Europe</span>
+                <a href="#" class="country"> France</a>
+              </div>
+              <div class="dropdown-item">
+                <span class="continent-name">🌎 Amérique</span>
+              </div>
+              <div class="dropdown-item">
+                <span class="continent-name">🌏 Océanie</span>
               </div>
             </div>
-            <div class="dropdown">
-              <span class="guides">Guides</span>
-              <ul class="dropdown-content">
-                <li class="dropdown-item"><a href="egypte.html">Amad</a></li>
-                <li class="dropdown-item">
-                  <a href="thailande.html">Sadio</a>
-                </li>
-                <li class="dropdown-item"><a href="#">Marie</a></li>
-              </ul>
-            </div>
           </div>
-        </nav>
-        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
-      </div>
-    </header>
+          <div class="dropdown">
+            <span class="guides">Guides</span>
+            <ul class="dropdown-content">
+              <li class="dropdown-item"><a href="egypte.html">Amad</a></li>
+              <li class="dropdown-item">
+                <a href="thailande.html">Sadio</a>
+              </li>
+              <li class="dropdown-item"><a href="#">Marie</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
 
-    <!-- Mobile Menu -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="index.html" class="mobile-nav-link">Accueil</a>
-      <div class="mobile-dropdown">
-        <a href="#" class="mobile-nav-link mobile-dropdown-toggle"
-          >Continents</a
-        >
-        <div class="mobile-dropdown-content">
-          <a href="egypte.html" class="mobile-dropdown-item"
-            >🌍 Afrique → egypte</a
-          >
-          <a href="thailande.html" class="mobile-dropdown-item"
-            >🌏 Asie → thailande</a
-          >
-          <a href="#" class="mobile-dropdown-item">🌎 Amérique</a>
-          <a href="#" class="mobile-dropdown-item">🌍 Europe</a>
-          <a href="#" class="mobile-dropdown-item">🌏 Océanie</a>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="mobile-nav-link">Accueil</a>
+    <div class="mobile-dropdown">
+      <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Continents</a>
+      <div class="mobile-dropdown-content">
+        <a href="egypte.html" class="mobile-dropdown-item">🌍 Afrique → egypte</a>
+        <a href="thailande.html" class="mobile-dropdown-item">🌏 Asie → thailande</a>
+        <a href="#" class="mobile-dropdown-item">🌎 Amérique</a>
+        <a href="#" class="mobile-dropdown-item">🌍 Europe</a>
+        <a href="#" class="mobile-dropdown-item">🌏 Océanie</a>
+      </div>
+    </div>
+    <div class="mobile-dropdown">
+      <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Guides</a>
+      <div class="mobile-dropdown-content">
+        <a href="egypte.html" class="mobile-dropdown-item"> Amad</a>
+        <a href="thailande.html" class="mobile-dropdown-item">Sadio</a>
+        <a href="#" class="mobile-dropdown-item">Marie</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Thaïlande – Le Royaume du Sourire</h1>
+        <p>
+          Découvrez la richesse de la Thaïlande, des temples sacrés de Bangkok
+          aux plages paradisiaques de Phuket
+        </p>
+      </div>
+    </section>
+
+    <!-- Bienvenue + Image + Tableau -->
+    <section class="intro-meteo">
+      <div class="intro-card">
+        <div class="intro-text">
+          <h2>
+            Sawasdee kha/krap, bienvenue au cœur du Royaume du Sourire !
+          </h2>
+          <p>
+            La Thaïlande est un véritable carrefour entre spiritualité, nature
+            luxuriante et traditions vivantes.<br />
+            Des temples scintillants de Bangkok aux rizières du Nord, des
+            marchés flottants aux plages idylliques du Sud, chaque région
+            offre une immersion unique dans un univers fascinant.<br />
+            Que vous soyez passionné de culture, d’aventure ou de détente, la
+            Thaïlande vous invite à vivre des instants inoubliables dans un
+            décor d’une beauté naturelle et d’une richesse culturelle
+            fascinante.
+          </p>
+        </div>
+        <div class="intro-img">
+          <img src="img/thaismile.jpg" alt="Visages de la Thaïlande" />
         </div>
       </div>
-      <div class="mobile-dropdown">
-        <a href="#" class="mobile-nav-link mobile-dropdown-toggle">Guides</a>
-        <div class="mobile-dropdown-content">
-          <a href="egypte.html" class="mobile-dropdown-item"> Amad</a>
-          <a href="thailande.html" class="mobile-dropdown-item">Sadio</a>
-          <a href="#" class="mobile-dropdown-item">Marie</a>
+
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Région</th>
+              <th>Saison Idéale</th>
+              <th>Température</th>
+              <th>Spécialité Culinaire</th>
+              <th>Budget Moyen/Jour</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="#">Bangkok & Centre</a></td>
+              <td>Nov–Fév</td>
+              <td>25–32°C</td>
+              <td>Pad Thaï, Tom Yum</td>
+              <td>40–80€</td>
+            </tr>
+            <tr>
+              <td><a href="#">Nord (Chiang Mai)</a></td>
+              <td>Nov–Fév</td>
+              <td>18–28°C</td>
+              <td>Khao Soi, Sai Ua</td>
+              <td>30–70€</td>
+            </tr>
+            <tr>
+              <td><a href="#">Sud (Phuket, Krabi)</a></td>
+              <td>Déc–Avr</td>
+              <td>27–35°C</td>
+              <td>Curry Massaman, Fruits Tropicaux</td>
+              <td>50–90€</td>
+            </tr>
+            <tr>
+              <td><a href="#">Nord-Est (Isan)</a></td>
+              <td>Nov–Mars</td>
+              <td>20–30°C</td>
+              <td>Som Tam, Larb</td>
+              <td>25–60€</td>
+            </tr>
+            <tr>
+              <td><a href="#">Îles (Koh Samui…)</a></td>
+              <td>Jan–Août</td>
+              <td>26–33°C</td>
+              <td>Fruits de mer, Curry rouge</td>
+              <td>60–100€</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Trésors & Contact -->
+    <section class="tresors-contact">
+      <div class="tresors">
+        <h2>Trésors de Thaïlande</h2>
+        <ul>
+          <li>
+            🏯 <strong>Grand Palais – Bangkok</strong><br />Ancienne résidence
+            royale, chef-d'œuvre architectural et centre spirituel de la
+            nation.
+          </li>
+          <li>
+            🔶 <strong>Temple du Bouddha d’Émeraude – Bangkok</strong><br />Temple sacré le plus vénéré de Thaïlande,
+            situé au cœur du
+            Grand Palais.
+          </li>
+          <li>
+            🦣 <strong>Parc National de Khao Yai</strong><br />Réserve
+            naturelle classée à l’UNESCO, idéale pour les randonnées et
+            l’observation des éléphants.
+          </li>
+          <li>
+            🌾 <strong>Rizières en terrasse – Chiang Mai</strong><br />Paysages apaisants et emblématiques du nord
+            thaïlandais,
+            entre nature et traditions.
+          </li>
+          <li>
+            🏝️ <strong>Îles Phi Phi – Sud de la Thaïlande</strong><br />Plages
+            turquoise et falaises spectaculaires, spot de rêve pour le
+            snorkeling et la détente.
+          </li>
+          <li>
+            🛕 <strong>Wat Phra That Doi Suthep – Chiang Mai</strong><br />Temple perché sur les hauteurs, offrant une
+            vue panoramique
+            et un lieu de méditation paisible.
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h2>Contactez Nos Experts Thaïlande</h2>
+        <form>
+          <label for="nom">Nom et Prénom</label>
+          <input type="text" id="nom" name="nom" placeholder="Votre nom complet" required />
+
+          <label for="tel">Téléphone</label>
+          <input type="tel" id="tel" name="tel" placeholder="+33 1 23 45 67 89" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="votre@email.fr" required />
+
+          <label>Type de Séjour</label>
+          <div class="radio-group">
+            <label><input type="radio" name="sejour" value="culturel" />
+              Culturel</label>
+            <label><input type="radio" name="sejour" value="nature" />
+              Nature</label>
+            <label><input type="radio" name="sejour" value="gastro" />
+              Gastronomique</label>
+            <label><input type="radio" name="sejour" value="detente" />
+              Détente</label>
+          </div>
+
+          <label for="region">Régions Préférées</label>
+          <select id="region" name="region" required>
+            <option value="" disabled selected>
+              Sélectionner une région
+            </option>
+            <option value="nord">Nord</option>
+            <option value="sud">Sud</option>
+            <option value="iles">Îles</option>
+          </select>
+
+          <label for="message">Votre Message</label>
+          <textarea id="message" name="message" placeholder="Décrivez vos envies de voyage en Thaïlande..."
+            required></textarea>
+
+          <button type="submit">Envoyer ma Demande</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="galerie">
+      <h2>La Thaïlande en Images</h2>
+      <div class="galerie-imgs">
+        <img src="img/themple.jpg" alt="Temple Bangkok" />
+        <img src="img/landscape.jpg" alt="lands scape vert" />
+        <img src="img/thai.jpg" alt="Culture locale" />
+        <img src="img/boudha.jpg" alt="Bouddha" />
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Actions -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <h3>Explorez d'Autres Destinations</h3>
+          <p>Découvrez nos autres destinations de rêve</p>
+        </div>
+        <div class="footer-actions">
+          <button class="footer-btn btn-primary">
+            <span>🇪🇬</span>
+            <a href="#">Découvrir l'Egypte</a>
+          </button>
+          <button class="footer-btn btn-tertiary">
+            <span>🇫🇷</span>
+            <a href="index.html">Découvrir la France</a>
+          </button>
+          <button class="footer-btn btn-secondary">
+            <span>🏠</span>
+            <a href="thailande.html"> Retour à l'Accueil</a>
+          </button>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- main -->
-    <main>
-      <!-- Hero -->
-      <section class="hero">
-        <div class="hero-text">
-          <h1>Thaïlande – Le Royaume du Sourire</h1>
-          <p>
-            Découvrez la richesse de la Thaïlande, des temples sacrés de Bangkok
-            aux plages paradisiaques de Phuket
-          </p>
-        </div>
-      </section>
+  <!-- JS menu mobile -->
+  <script src="script.js"></script>
+</body>
 
-      <!-- Bienvenue + Image + Tableau -->
-      <section class="intro-meteo">
-        <div class="intro-card">
-          <div class="intro-text">
-            <h2>
-              Sawasdee kha/krap, bienvenue au cœur du Royaume du Sourire !
-            </h2>
-            <p>
-              La Thaïlande est un véritable carrefour entre spiritualité, nature
-              luxuriante et traditions vivantes.<br />
-              Des temples scintillants de Bangkok aux rizières du Nord, des
-              marchés flottants aux plages idylliques du Sud, chaque région
-              offre une immersion unique dans un univers fascinant.<br />
-              Que vous soyez passionné de culture, d’aventure ou de détente, la
-              Thaïlande vous invite à vivre des instants inoubliables dans un
-              décor d’une beauté naturelle et d’une richesse culturelle
-              fascinante.
-            </p>
-          </div>
-          <div class="intro-img">
-            <img src="img/thaismile.jpg" alt="Visages de la Thaïlande" />
-          </div>
-        </div>
-
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Région</th>
-                <th>Saison Idéale</th>
-                <th>Température</th>
-                <th>Spécialité Culinaire</th>
-                <th>Budget Moyen/Jour</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="#">Bangkok & Centre</a></td>
-                <td>Nov–Fév</td>
-                <td>25–32°C</td>
-                <td>Pad Thaï, Tom Yum</td>
-                <td>40–80€</td>
-              </tr>
-              <tr>
-                <td><a href="#">Nord (Chiang Mai)</a></td>
-                <td>Nov–Fév</td>
-                <td>18–28°C</td>
-                <td>Khao Soi, Sai Ua</td>
-                <td>30–70€</td>
-              </tr>
-              <tr>
-                <td><a href="#">Sud (Phuket, Krabi)</a></td>
-                <td>Déc–Avr</td>
-                <td>27–35°C</td>
-                <td>Curry Massaman, Fruits Tropicaux</td>
-                <td>50–90€</td>
-              </tr>
-              <tr>
-                <td><a href="#">Nord-Est (Isan)</a></td>
-                <td>Nov–Mars</td>
-                <td>20–30°C</td>
-                <td>Som Tam, Larb</td>
-                <td>25–60€</td>
-              </tr>
-              <tr>
-                <td><a href="#">Îles (Koh Samui…)</a></td>
-                <td>Jan–Août</td>
-                <td>26–33°C</td>
-                <td>Fruits de mer, Curry rouge</td>
-                <td>60–100€</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <!-- Trésors & Contact -->
-      <section class="tresors-contact">
-        <div class="tresors">
-          <h2>Trésors de Thaïlande</h2>
-          <ul>
-            <li>
-              🏯 <strong>Grand Palais – Bangkok</strong><br />Ancienne résidence
-              royale, chef-d'œuvre architectural et centre spirituel de la
-              nation.
-            </li>
-            <li>
-              🔶 <strong>Temple du Bouddha d’Émeraude – Bangkok</strong
-              ><br />Temple sacré le plus vénéré de Thaïlande, situé au cœur du
-              Grand Palais.
-            </li>
-            <li>
-              🦣 <strong>Parc National de Khao Yai</strong><br />Réserve
-              naturelle classée à l’UNESCO, idéale pour les randonnées et
-              l’observation des éléphants.
-            </li>
-            <li>
-              🌾 <strong>Rizières en terrasse – Chiang Mai</strong
-              ><br />Paysages apaisants et emblématiques du nord thaïlandais,
-              entre nature et traditions.
-            </li>
-            <li>
-              🏝️ <strong>Îles Phi Phi – Sud de la Thaïlande</strong><br />Plages
-              turquoise et falaises spectaculaires, spot de rêve pour le
-              snorkeling et la détente.
-            </li>
-            <li>
-              🛕 <strong>Wat Phra That Doi Suthep – Chiang Mai</strong
-              ><br />Temple perché sur les hauteurs, offrant une vue panoramique
-              et un lieu de méditation paisible.
-            </li>
-          </ul>
-        </div>
-
-        <div class="contact">
-          <h2>Contactez Nos Experts Thaïlande</h2>
-          <form>
-            <label for="nom">Nom et Prénom</label>
-            <input
-              type="text"
-              id="nom"
-              name="nom"
-              placeholder="Votre nom complet"
-              required
-            />
-
-            <label for="tel">Téléphone</label>
-            <input
-              type="tel"
-              id="tel"
-              name="tel"
-              placeholder="+33 1 23 45 67 89"
-              required
-            />
-
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="votre@email.fr"
-              required
-            />
-
-            <label>Type de Séjour</label>
-            <div class="radio-group">
-              <label
-                ><input type="radio" name="sejour" value="culturel" />
-                Culturel</label
-              >
-              <label
-                ><input type="radio" name="sejour" value="nature" />
-                Nature</label
-              >
-              <label
-                ><input type="radio" name="sejour" value="gastro" />
-                Gastronomique</label
-              >
-              <label
-                ><input type="radio" name="sejour" value="detente" />
-                Détente</label
-              >
-            </div>
-
-            <label for="region">Régions Préférées</label>
-            <select id="region" name="region" required>
-              <option value="" disabled selected>
-                Sélectionner une région
-              </option>
-              <option value="nord">Nord</option>
-              <option value="sud">Sud</option>
-              <option value="iles">Îles</option>
-            </select>
-
-            <label for="message">Votre Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Décrivez vos envies de voyage en Thaïlande..."
-              required
-            ></textarea>
-
-            <button type="submit">Envoyer ma Demande</button>
-          </form>
-        </div>
-      </section>
-
-      <!-- Galerie -->
-      <section class="galerie">
-        <h2>La Thaïlande en Images</h2>
-        <div class="galerie-imgs">
-          <img src="img/themple.jpg" alt="Temple Bangkok" />
-          <img src="img/landscape.jpg" alt="lands scape vert" />
-          <img src="img/thai.jpg" alt="Culture locale" />
-          <img src="img/boudha.jpg" alt="Bouddha" />
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-content">
-          <div class="footer-text">
-            <h3>Explorez d'Autres Destinations</h3>
-            <p>Découvrez nos autres destinations de rêve</p>
-          </div>
-          <div class="footer-actions">
-            <a href="#" class="footer-btn btn-vert">🇫🇷 Découvrir la France</a>
-            <a href="egypte.html" class="footer-btn btn-rouge"
-              >🇪🇬 Découvrir l'Égypte</a
-            >
-            <a href="index.html" class="footer-btn btn-gris"
-              >🏠 Retour à l'Accueil</a
-            >
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- JS menu mobile -->
-    <script src="script.js"></script>
-  </body>
 </html>
